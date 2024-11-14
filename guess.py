@@ -1,26 +1,16 @@
-n=int(input('Enter the number'))
-i=1
-if n>=0 and n<=100:
-    print(n)
-    playagain=(input('Do you want to play again? (yes/no): '))
-    while i<5:
-        if playagain!="no":
-            m=int(input("Enter the number: "))
-            i +=1
-            if m>0 and m<100:
-                print(m)
+import random 
+n = random.randint(1,100)
+guess=0
+while guess!=n:
+    guess=int(input('Enter the number :  ')
+    if (guess<n):
+        print('Guess number too low')
+    elif (guess>n):
+        print('Guess number is too high')
+else:
+    print('You won')
+    
+    
 
-            l=int(input('Enter the number: '))
-            if l>0 and l<100:
-                print(l)
-            p=int(input('Enter the number: '))
-            if p>0 and p<100:
-                print(p)
-
-            else:
-                print('guess is too high or too low ')
-
-
-
-
-
+    
+    
